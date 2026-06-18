@@ -2,6 +2,7 @@ import ProductCard from '../components/ProductCard';
 import { machineryData } from '../data/machineryData';
 import { motion } from 'framer-motion';
 import ParticleField from '../components/ParticleField';
+import { getAssetPath } from '../utils/assetPath';
 
 const Import = () => {
   const plasticRecycling = machineryData.filter(m => m.category === 'Plastic Recycling');
@@ -20,7 +21,7 @@ const Import = () => {
           className="absolute inset-0"
         >
           <img
-            src="/Two_industrial_machines_dark_bac._202606162244.jpeg"
+            src={getAssetPath('/Two_industrial_machines_dark_bac._202606162244.jpeg')}
             alt="Recycling machinery"
             className="w-full h-full object-cover"
           />

@@ -8,6 +8,7 @@ import { machineryData } from '../data/machineryData';
 import { ArrowRight, Leaf, Factory, TrendingUp } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { getAssetPath } from '../utils/assetPath';
 import clsx from 'clsx';
 
 const statsData = [
@@ -185,7 +186,7 @@ const Home = () => {
         {/* Parallax background */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/export_product_hero.jpeg"
+            src={getAssetPath('/export_product_hero.jpeg')}
             alt="Eco landscape"
             className="w-full h-full object-cover opacity-[0.08]"
           />

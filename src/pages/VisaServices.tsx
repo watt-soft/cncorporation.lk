@@ -1,6 +1,7 @@
 import { FileText, Briefcase, CheckCircle2, ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 import ParticleField from '../components/ParticleField';
+import { getAssetPath } from '../utils/assetPath';
 
 const containerVariants = {
   hidden: {},
@@ -32,7 +33,7 @@ const VisaServices = () => {
           className="absolute inset-0"
         >
           <img
-            src="/visa_hero.jpeg"
+            src={getAssetPath('/visa_hero.jpeg')}
             alt="Japan Travel"
             className="w-full h-full object-cover"
           />

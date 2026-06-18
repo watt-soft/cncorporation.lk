@@ -4,6 +4,7 @@ import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import clsx from 'clsx';
 import ScrollProgress from './ScrollProgress';
+import { getAssetPath } from '../utils/assetPath';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,7 +48,7 @@ const Navbar = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 transition={{ type: 'spring', stiffness: 300, damping: 15 }}
-                src="/cnc_logo.png"
+                src={getAssetPath('/cnc_logo.png')}
                 alt="CN Corporation Logo"
                 className="h-12 w-auto object-contain"
               />

@@ -2,6 +2,7 @@ import { exportData } from '../data/exportData';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import ParticleField from '../components/ParticleField';
+import { getAssetPath } from '../utils/assetPath';
 
 const Export = () => {
   return (
@@ -16,7 +17,7 @@ const Export = () => {
           className="absolute inset-0"
         >
           <img
-            src="/export_product_hero.jpeg"
+            src={getAssetPath('/export_product_hero.jpeg')}
             alt="Agricultural exports"
             className="w-full h-full object-cover"
           />

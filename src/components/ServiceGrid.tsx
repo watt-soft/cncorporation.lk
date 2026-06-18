@@ -4,6 +4,7 @@ import { Factory, Leaf, Globe, Car, ArrowRight } from 'lucide-react';
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import { servicesData } from '../data/servicesData';
 import clsx from 'clsx';
+import { getAssetPath } from '../utils/assetPath';
 
 const iconMap: Record<string, React.ReactNode> = {
   Factory: <Factory size={32} />,
@@ -13,10 +14,10 @@ const iconMap: Record<string, React.ReactNode> = {
 };
 
 const bgImages: Record<string, string> = {
-  s1: '/Industrial_recycling_machine_reveal_202606162256.jpeg',
-  s2: '/export_product_hero.jpeg',
-  s3: '/visa_hero.jpeg',
-  s4: '/import_vehile.jpeg',
+  s1: getAssetPath('/Industrial_recycling_machine_reveal_202606162256.jpeg'),
+  s2: getAssetPath('/export_product_hero.jpeg'),
+  s3: getAssetPath('/visa_hero.jpeg'),
+  s4: getAssetPath('/import_vehile.jpeg'),
 };
 
 const containerVariants = {

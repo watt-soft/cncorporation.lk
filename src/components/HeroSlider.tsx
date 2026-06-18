@@ -3,11 +3,12 @@ import { ChevronLeft, ChevronRight, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import ParticleField from './ParticleField';
+import { getAssetPath } from '../utils/assetPath';
 
 const slides = [
   {
     id: 1,
-    image: '/Industrial_recycling_machine_reveal_202606162256.jpeg',
+    image: getAssetPath('/Industrial_recycling_machine_reveal_202606162256.jpeg'),
     title: 'Advanced Japanese Recycling Technology',
     subtitle: 'Turning waste into value for a sustainable tomorrow. High-efficiency machinery imported directly from Japan.',
     cta: 'View Machinery',
@@ -15,7 +16,7 @@ const slides = [
   },
   {
     id: 2,
-    image: '/export_product_hero.jpeg',
+    image: getAssetPath('/export_product_hero.jpeg'),
     title: 'Premium Agricultural Exports',
     subtitle: "Sri Lanka's finest Coir Fibre and Coco Peat, meeting the highest global horticulture standards.",
     cta: 'Discover Exports',
@@ -23,7 +24,7 @@ const slides = [
   },
   {
     id: 3,
-    image: '/visa_hero.jpeg',
+    image: getAssetPath('/visa_hero.jpeg'),
     title: 'Japan Visas & Work Permits',
     subtitle: 'Expert facilitation for international students and professionals seeking opportunities abroad.',
     cta: 'Learn More',

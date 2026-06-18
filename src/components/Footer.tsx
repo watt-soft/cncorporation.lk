@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin, ArrowUp } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { getAssetPath } from '../utils/assetPath';
 
 const footerVariants = {
   hidden: {},
@@ -53,7 +54,7 @@ const Footer = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 transition={{ type: 'spring', stiffness: 300, damping: 15 }}
-                src="/cnc_logo.png"
+                src={getAssetPath('/cnc_logo.png')}
                 alt="CN Corporation Logo"
                 className="h-12 w-auto object-contain"
               />
