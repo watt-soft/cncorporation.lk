@@ -49,13 +49,14 @@ const Footer = () => {
           {/* Brand Info */}
           <motion.div variants={itemVariants}>
             <Link to="/" className="flex items-center gap-2.5 mb-6 group">
-              <motion.div
-                whileHover={{ rotate: 12 }}
-                transition={{ type: 'spring' }}
-                className="w-10 h-10 bg-accent flex items-center justify-center rounded-lg shadow-[0_0_15px_rgba(244,197,27,0.15)]"
-              >
-                <Globe className="text-primary w-6 h-6" />
-              </motion.div>
+              <motion.img
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ type: 'spring', stiffness: 300, damping: 15 }}
+                src="/cnc_logo.png"
+                alt="CN Corporation Logo"
+                className="h-12 w-auto object-contain"
+              />
               <div className="flex flex-col">
                 <span className="text-xl font-bold text-textLight leading-tight tracking-wider">
                   CN <span className="text-accent">CORPORATION</span>

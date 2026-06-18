@@ -13,10 +13,10 @@ const iconMap: Record<string, React.ReactNode> = {
 };
 
 const bgImages: Record<string, string> = {
-  s1: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
-  s2: 'https://images.unsplash.com/photo-1592982537447-7440770cbfc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
-  s3: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
-  s4: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
+  s1: '/Industrial_recycling_machine_reveal_202606162256.jpeg',
+  s2: '/export_product_hero.jpeg',
+  s3: '/visa_hero.jpeg',
+  s4: '/import_vehile.jpeg',
 };
 
 const containerVariants = {
