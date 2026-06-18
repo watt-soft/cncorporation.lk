@@ -112,6 +112,7 @@ const ServiceGrid = () => {
                   <img
                     src={bgImages[service.id]}
                     alt=""
+                    loading="lazy"
                     className="w-full h-full object-cover opacity-[0.06] group-hover:opacity-[0.12] transition-opacity duration-700 scale-110 group-hover:scale-100"
                   />
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-primary/90 to-primary/80" />

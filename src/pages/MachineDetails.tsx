@@ -148,6 +148,7 @@ const MachineDetails = () => {
                   <img 
                     src={machine.image} 
                     alt={machine.name} 
+                    loading="lazy"
                     className="w-full h-full object-cover rounded-xl"
                   />
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
@@ -165,6 +166,7 @@ const MachineDetails = () => {
                   <img 
                     src={details.diagramImage} 
                     alt={`${machine.name} System Diagram`} 
+                    loading="lazy"
                     className="w-full h-full object-contain bg-white/95 rounded-xl p-2"
                   />
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">

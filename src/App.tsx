@@ -1,15 +1,16 @@
 import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useEffect, Suspense, lazy } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import Home from './pages/Home';
-import Import from './pages/Import';
-import Export from './pages/Export';
-import VisaServices from './pages/VisaServices';
-import Contact from './pages/Contact';
 
-import MachineDetails from './pages/MachineDetails';
+// Lazy load pages for better performance
+const Home = lazy(() => import('./pages/Home'));
+const Import = lazy(() => import('./pages/Import'));
+const Export = lazy(() => import('./pages/Export'));
+const VisaServices = lazy(() => import('./pages/VisaServices'));
+const Contact = lazy(() => import('./pages/Contact'));
+const MachineDetails = lazy(() => import('./pages/MachineDetails'));
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -20,6 +21,13 @@ function ScrollToTop() {
 
   return null;
 }
+
+// Simple loading spinner for suspense fallback
+const PageLoader = () => (
+  <div className="min-h-[60vh] flex items-center justify-center">
+    <div className="w-12 h-12 border-4 border-accent border-t-transparent rounded-full animate-spin" />
+  </div>
+);
 
 function AppContent() {
   const location = useLocation();
@@ -37,14 +45,16 @@ function AppContent() {
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] as const }}
           >
-            <Routes location={location}>
-              <Route path="/" element={<Home />} />
-              <Route path="/import" element={<Import />} />
-              <Route path="/import/:id" element={<MachineDetails />} />
-              <Route path="/export" element={<Export />} />
-              <Route path="/visa-services" element={<VisaServices />} />
-              <Route path="/contact" element={<Contact />} />
-            </Routes>
+            <Suspense fallback={<PageLoader />}>
+              <Routes location={location}>
+                <Route path="/" element={<Home />} />
+                <Route path="/import" element={<Import />} />
+                <Route path="/import/:id" element={<MachineDetails />} />
+                <Route path="/export" element={<Export />} />
+                <Route path="/visa-services" element={<VisaServices />} />
+                <Route path="/contact" element={<Contact />} />
+              </Routes>
+            </Suspense>
           </motion.div>
         </AnimatePresence>
       </main>
