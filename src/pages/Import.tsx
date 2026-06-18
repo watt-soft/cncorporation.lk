@@ -21,7 +21,7 @@ const Import = () => {
           className="absolute inset-0"
         >
           <img
-            src={getAssetPath('/Two_industrial_machines_dark_bac._202606162244.jpeg')}
+            src={getAssetPath('/export_hero.jpeg')}
             alt="Recycling machinery"
             className="w-full h-full object-cover"
           />
