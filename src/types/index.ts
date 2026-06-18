@@ -1,3 +1,25 @@
+export interface MachineSpec {
+  model: string;
+  dimensions: string;
+  powerSupply: string;
+  maxPower: string;
+  processingVolume: string;
+  weight: string;
+}
+
+export interface MachineDetails {
+  overview: string;
+  keyBenefits: { title: string; desc: string }[];
+  processingSteps?: { step: number; title: string; desc: string }[];
+  processableItems?: string[];
+  nonProcessableItems?: string[];
+  targetFacilities?: string[];
+  systemOptions?: string[];
+  specificationsTable?: MachineSpec[];
+  diagramImage?: string;
+  heroImage?: string;
+}
+
 export interface MachineItem {
   id: string;
   name: string;
@@ -5,6 +27,7 @@ export interface MachineItem {
   image: string;
   shortDesc: string;
   features: string[];
+  details?: MachineDetails;
 }
 
 export interface ExportProduct {

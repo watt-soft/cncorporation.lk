@@ -4,7 +4,7 @@ export const exportData: ExportProduct[] = [
   {
     id: 'e1',
     name: 'Coir Fibre (Thanthu)',
-    image: 'https://images.unsplash.com/photo-1598514982205-f36b96d1e8d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    image: '/export_product_hero.jpeg',
     description: 'High-quality natural fibre extracted from coconut husks, processed in our Sri Lankan facilities to meet international standards.',
     applications: [
       'Mattress and upholstery manufacturing',
@@ -16,7 +16,7 @@ export const exportData: ExportProduct[] = [
   {
     id: 'e2',
     name: 'Coco Peat',
-    image: 'https://images.unsplash.com/photo-1416879598555-220b8dc91191?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+    image: '/export_product_hero.jpeg',
     description: 'A 100% natural, eco-friendly growing medium with excellent water retention and aeration properties, ideal for horticulture.',
     applications: [
       'Commercial greenhouse farming',

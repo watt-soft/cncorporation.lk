@@ -185,7 +185,7 @@ const Home = () => {
         {/* Parallax background */}
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+            src="/export_product_hero.jpeg"
             alt="Eco landscape"
             className="w-full h-full object-cover opacity-[0.08]"
           />
@@ -296,6 +296,7 @@ const Home = () => {
             {featuredMachines.map((machine, i) => (
               <ProductCard
                 key={machine.id}
+                id={machine.id}
                 title={machine.name}
                 category={machine.category}
                 image={machine.image}

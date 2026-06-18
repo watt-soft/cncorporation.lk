@@ -47,7 +47,7 @@ const Contact = () => {
           className="absolute inset-0"
         >
           <img
-            src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+            src="/visa_hero.jpeg"
             alt="Contact us"
             className="w-full h-full object-cover"
           />

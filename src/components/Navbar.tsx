@@ -43,15 +43,15 @@ const Navbar = () => {
           <div className="flex justify-between items-center">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-2.5 group">
-              <motion.div
-                whileHover={{ rotate: 12, scale: 1.1 }}
+              <motion.img
+                whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 transition={{ type: 'spring', stiffness: 300, damping: 15 }}
-                className="w-10 h-10 bg-accent flex items-center justify-center rounded-lg shadow-[0_0_15px_rgba(244,197,27,0.2)]"
-              >
-                <Globe className="text-primary w-6 h-6" />
-              </motion.div>
-              <div className="flex flex-col">
+                src="/cnc_logo.png"
+                alt="CN Corporation Logo"
+                className="h-12 w-auto object-contain"
+              />
+              <div className="flex flex-col hidden sm:flex">
                 <span className="text-xl font-bold text-textLight leading-tight tracking-wider">
                   CN <span className="text-accent">CORPORATION</span>
                 </span>

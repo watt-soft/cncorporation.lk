@@ -20,7 +20,7 @@ const Import = () => {
           className="absolute inset-0"
         >
           <img
-            src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+            src="/Two_industrial_machines_dark_bac._202606162244.jpeg"
             alt="Recycling machinery"
             className="w-full h-full object-cover"
           />
@@ -72,39 +72,6 @@ const Import = () => {
 
       <div className="container mx-auto px-4 md:px-6 relative z-10 py-24">
 
-        {/* Plastic Waste Solutions */}
-        <div className="mb-24">
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="flex items-center gap-4 mb-10"
-          >
-            <h2 className="text-3xl font-bold text-textLight whitespace-nowrap">Plastic Waste Solutions</h2>
-            <motion.div
-              initial={{ scaleX: 0 }}
-              whileInView={{ scaleX: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="h-px bg-gradient-to-r from-gray-800 to-transparent flex-grow origin-left"
-            />
-          </motion.div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {plasticRecycling.map((machine, i) => (
-              <ProductCard
-                key={machine.id}
-                title={machine.name}
-                category={machine.category}
-                image={machine.image}
-                description={machine.shortDesc}
-                features={machine.features}
-                index={i}
-              />
-            ))}
-          </div>
-        </div>
-
         {/* Food Waste Solutions */}
         <div className="mb-24">
           <motion.div
@@ -127,6 +94,41 @@ const Import = () => {
             {foodWaste.map((machine, i) => (
               <ProductCard
                 key={machine.id}
+                id={machine.id}
+                title={machine.name}
+                category={machine.category}
+                image={machine.image}
+                description={machine.shortDesc}
+                features={machine.features}
+                index={i}
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* Plastic Waste Solutions */}
+        <div className="mb-24">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="flex items-center gap-4 mb-10"
+          >
+            <h2 className="text-3xl font-bold text-textLight whitespace-nowrap">Plastic Waste Solutions</h2>
+            <motion.div
+              initial={{ scaleX: 0 }}
+              whileInView={{ scaleX: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="h-px bg-gradient-to-r from-gray-800 to-transparent flex-grow origin-left"
+            />
+          </motion.div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {plasticRecycling.map((machine, i) => (
+              <ProductCard
+                key={machine.id}
+                id={machine.id}
                 title={machine.name}
                 category={machine.category}
                 image={machine.image}
@@ -168,6 +170,7 @@ const Import = () => {
             {vehicles.map((vehicle, i) => (
               <ProductCard
                 key={vehicle.id}
+                id={vehicle.id}
                 title={vehicle.name}
                 category={vehicle.category}
                 image={vehicle.image}

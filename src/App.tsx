@@ -9,6 +9,8 @@ import Export from './pages/Export';
 import VisaServices from './pages/VisaServices';
 import Contact from './pages/Contact';
 
+import MachineDetails from './pages/MachineDetails';
+
 function ScrollToTop() {
   const { pathname } = useLocation();
 
@@ -38,6 +40,7 @@ function AppContent() {
             <Routes location={location}>
               <Route path="/" element={<Home />} />
               <Route path="/import" element={<Import />} />
+              <Route path="/import/:id" element={<MachineDetails />} />
               <Route path="/export" element={<Export />} />
               <Route path="/visa-services" element={<VisaServices />} />
               <Route path="/contact" element={<Contact />} />
