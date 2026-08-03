@@ -62,6 +62,7 @@ const Footer = () => {
                 <span className="text-xl font-bold text-textLight leading-tight tracking-wider">
                   CN <span className="text-accent">CORPORATION</span>
                 </span>
+                <span className="text-xs text-textMuted mt-0.5">(PVT) LTD</span>
               </div>
             </Link>
             <p className="text-textMuted text-sm mb-6 leading-relaxed">
@@ -94,7 +95,7 @@ const Footer = () => {
             <h4 className="text-textLight font-bold mb-6 tracking-wide uppercase text-sm">Company</h4>
             <ul className="space-y-3">
               {[
-                { to: '/', label: 'About Us' },
+                { to: '/company-info', label: 'About Us' },
                 { to: '/contact', label: 'Contact & Support' },
                 { to: '#', label: 'Privacy Policy' },
               ].map((link) => (
@@ -114,15 +115,15 @@ const Footer = () => {
             <ul className="space-y-4 text-sm">
               <li className="flex items-start gap-3 group">
                 <MapPin className="w-5 h-5 text-accent flex-shrink-0 mt-0.5 group-hover:scale-110 transition-transform" />
-                <span className="text-textMuted group-hover:text-textLight transition-colors">123 Industrial Zone, Colombo 03, Sri Lanka</span>
+                <span className="text-textMuted group-hover:text-textLight transition-colors">354/1, Negombo Road, Nittabuwa, Sri Lanka</span>
               </li>
               <li className="flex items-center gap-3 group">
                 <Phone className="w-5 h-5 text-accent flex-shrink-0 group-hover:scale-110 transition-transform" />
-                <span className="text-textMuted group-hover:text-textLight transition-colors">+94 11 234 5678</span>
+                <span className="text-textMuted group-hover:text-textLight transition-colors">+94 76 076 5300</span>
               </li>
               <li className="flex items-center gap-3 group">
                 <Mail className="w-5 h-5 text-accent flex-shrink-0 group-hover:scale-110 transition-transform" />
-                <span className="text-textMuted group-hover:text-textLight transition-colors">info@cncorporation.lk</span>
+                <span className="text-textMuted group-hover:text-textLight transition-colors">cncimex@gmail.com</span>
               </li>
             </ul>
           </motion.div>
@@ -137,7 +138,7 @@ const Footer = () => {
           className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4"
         >
           <p className="text-textMuted/60 text-xs text-center md:text-left">
-            &copy; {new Date().getFullYear()} CN Corporation. All rights reserved.
+            &copy; {new Date().getFullYear()} CN Corporation (PVT) LTD. All rights reserved.
           </p>
 
           {/* Back to top button */}

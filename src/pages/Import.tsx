@@ -57,7 +57,7 @@ const Import = () => {
             />
             <h1 className="text-4xl md:text-6xl font-bold text-textLight mb-6">
               Advanced Japanese <br/>
-              <span className="text-accent">Recycling Machinery</span>
+              <span className="text-accent">Waste Disposal System</span>
             </h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -65,7 +65,7 @@ const Import = () => {
               transition={{ delay: 0.4, duration: 0.5 }}
               className="text-xl text-textMuted max-w-3xl leading-relaxed"
             >
-              We supply industrial-grade recycling equipment directly imported from Japan. Built for longevity, efficiency, and a cleaner tomorrow.
+              We supply food waste processor that converts food waste into enviroment friendly water.
             </motion.p>
           </motion.div>
         </div>
@@ -141,47 +141,7 @@ const Import = () => {
           </div>
         </div>
 
-        {/* Vehicle Imports */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
-          className="glass-card rounded-2xl p-10 md:p-14 relative overflow-hidden"
-        >
-          <motion.div
-            animate={{ rotate: [0, 360] }}
-            transition={{ duration: 40, repeat: Infinity, ease: 'linear' }}
-            className="absolute -top-20 -right-20 w-40 h-40 border border-accent/10 rounded-full"
-          />
-
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="max-w-2xl mb-10 relative z-10"
-          >
-            <h2 className="text-3xl font-bold text-textLight mb-4">Commercial Vehicle Import</h2>
-            <p className="text-textMuted">
-              Leveraging our import expertise, we also source and supply reliable Japanese commercial vehicles to support your operational logistics.
-            </p>
-          </motion.div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
-            {vehicles.map((vehicle, i) => (
-              <ProductCard
-                key={vehicle.id}
-                id={vehicle.id}
-                title={vehicle.name}
-                category={vehicle.category}
-                image={vehicle.image}
-                description={vehicle.shortDesc}
-                features={vehicle.features}
-                index={i}
-              />
-            ))}
-          </div>
-        </motion.div>
+  
 
       </div>
     </div>

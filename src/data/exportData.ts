@@ -4,7 +4,7 @@ import { getAssetPath } from '../utils/assetPath';
 export const exportData: ExportProduct[] = [
   {
     id: 'e1',
-    name: 'Coir Fibre (Thanthu)',
+    name: 'Coir Fibre',
     image: getAssetPath('/export_product_hero.jpeg'),
     description: 'High-quality natural fibre extracted from coconut husks, processed in our Sri Lankan facilities to meet international standards.',
     applications: [

@@ -4,7 +4,7 @@ import { getAssetPath } from '../utils/assetPath';
 export const machineryData: MachineItem[] = [
   {
     id: 'gomiser',
-    name: 'Gomiser (GH Series)',
+    name: 'GH Series',
     category: 'Food Waste Recycling',
     image: getAssetPath('/gimiser.jpeg'),
     shortDesc: 'Environmentally friendly and hygienic food waste processor operating under the theme "Kind to the Earth, Beneficial to People".',
@@ -69,7 +69,7 @@ export const machineryData: MachineItem[] = [
   },
   {
     id: 'gomi-supporter',
-    name: 'Gomi Supporter (GSP Series)',
+    name: 'GSP Series',
     category: 'Food Waste Recycling',
     image: getAssetPath('/gomiser_supoter.jpeg'),
     shortDesc: 'Efficient large-scale food waste processing under the theme "No Storage, No Transport, No Incineration".',
@@ -119,7 +119,7 @@ export const machineryData: MachineItem[] = [
   },
   {
     id: 'm4',
-    name: 'Hino Dutro Cargo',
+    name: '',
     category: 'Vehicle',
     image: getAssetPath('/import_vehile.jpeg'),
     shortDesc: 'Reliable Japanese commercial truck for heavy logistics.',
