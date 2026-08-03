@@ -8,17 +8,17 @@ const contactItems = [
   {
     icon: <MapPin className="text-accent" size={24} />,
     title: 'Address',
-    lines: ['123 Industrial Zone,', 'Colombo 03, Sri Lanka'],
+    lines: ['354/1, Negombo Road, Nittabuwa, Sri Lanka'],
   },
   {
     icon: <Phone className="text-accent" size={24} />,
     title: 'Phone',
-    lines: ['+94 11 234 5678', '+94 77 123 4567 (Mobile/WhatsApp)'],
+    lines: ['+94 33 229 0729 (Tel/Fax)', '+94 76 076 5300 (Mobile/WhatsApp)'],
   },
   {
     icon: <Mail className="text-accent" size={24} />,
     title: 'Email',
-    lines: ['info@cncorporation.lk', 'sales@cncorporation.lk'],
+    lines: ['cncimex@gmail.com'],
   },
   {
     icon: <Clock className="text-accent" size={24} />,

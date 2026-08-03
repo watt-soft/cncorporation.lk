@@ -39,7 +39,6 @@ const Home = () => {
 
   return (
     <div className="bg-primary min-h-screen relative overflow-hidden">
-      {/* Hero Section */}
       <HeroSlider />
 
       {/* Corporate Impact / Industrial Stats Section */}

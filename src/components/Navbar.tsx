@@ -20,8 +20,9 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'Home', path: '/' },
-    { name: 'Import Machinery', path: '/import' },
-    { name: 'Export Products', path: '/export' },
+    { name: 'Sustainability & Eco-Friendly', path: '/import' },
+    { name: 'Vehicle & Machinery', path: '/Machinery' },
+    { name: 'Export Products', path: '/export' },   
     { name: 'Visa Services', path: '/visa-services' },
     { name: 'Contact', path: '/contact' },
   ];
@@ -56,6 +57,7 @@ const Navbar = () => {
                 <span className="text-xl font-bold text-textLight leading-tight tracking-wider">
                   CN <span className="text-accent">CORPORATION</span>
                 </span>
+                <span className="text-xs text-textMuted mt-0.5">(PVT) LTD</span>
               </div>
             </Link>
 
@@ -92,15 +94,6 @@ const Navbar = () => {
                   </NavLink>
                 </motion.div>
               ))}
-              <motion.div
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.8 }}
-              >
-                <Link to="/contact" className="btn-primary py-2.5 px-6 text-sm ml-4 rounded-lg">
-                  Get a Quote
-                </Link>
-              </motion.div>
             </nav>
 
             {/* Mobile Toggle */}

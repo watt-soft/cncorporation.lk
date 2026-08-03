@@ -1,0 +1,72 @@
+import { motion } from 'framer-motion';
+import ParticleField from '../components/ParticleField';
+import { getAssetPath } from '../utils/assetPath';
+
+const CompanyInfo = () => {
+  return (
+    <div className="bg-primary min-h-screen relative overflow-hidden">
+      <div className="relative h-[560px] flex items-center overflow-hidden">
+        <motion.div
+          initial={{ scale: 1.1 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 1.5, ease: 'easeOut' }}
+          className="absolute inset-0"
+        >
+          <img
+            src={getAssetPath('/export_product_hero.jpeg')}
+            alt="Company background"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-primary/60" />
+          <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-primary/30" />
+        </motion.div>
+
+        <ParticleField particleCount={18} color="244, 197, 27" maxSize={1.4} speed={0.14} />
+
+        <div className="container mx-auto px-4 md:px-6 relative z-10 pt-24">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            className="max-w-3xl"
+          >
+            <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.3em] text-accent font-semibold mb-6">
+              <span>Company Info</span>
+            </div>
+            <h1 className="text-4xl md:text-6xl font-bold text-textLight leading-tight tracking-tight mb-6">
+              CN Corporation
+            </h1>
+            <p className="text-lg md:text-xl text-textMuted max-w-3xl leading-relaxed">
+              Learn about our history, global partnerships, sustainable export growth, and how we connect Sri Lanka and Japan through trusted trade.
+            </p>
+          </motion.div>
+        </div>
+      </div>
+
+      <div className="container mx-auto px-4 md:px-6 relative z-10 py-24">
+        <div className="max-w-4xl mx-auto space-y-8 text-textMuted leading-relaxed text-base md:text-lg">
+          <p>
+            CN Corporation (Pvt) Ltd. is a Sri Lankan private limited company established under the Companies Act in 2012. Since its inception, the company has built a strong reputation in the import and distribution of motor vehicles and genuine spare parts, working in partnership with leading exporters in Japan to provide high-quality products and reliable services.
+          </p>
+          <p>
+            In 2014, CN Corporation expanded its international presence by establishing a branch office in Saitama Prefecture, Japan. This strategic expansion enabled the company to strengthen its direct relationships with Japanese suppliers and become a direct auction member, ensuring greater efficiency, transparency, and access to premium-quality vehicles.
+          </p>
+          <p>
+            Recognizing new opportunities in global trade, CN Corporation entered the export market in 2019, supplying high-quality Sri Lankan products to Japan. Our primary export products include coconut coir fibre and coco peat, serving the growing demand for sustainable agricultural and horticultural solutions in the Japanese market.
+          </p>
+          <p>
+            To ensure consistent quality and supply, CN Corporation has established a joint venture manufacturing operation in Sri Lanka for the production of coir fibre and coco peat products. This investment reflects our commitment to delivering premium natural products while supporting local industries and sustainable manufacturing practices.
+          </p>
+          <p>
+            Today, CN Corporation continues to diversify its business by promoting sustainable and eco-friendly solutions. We collaborate with leading manufacturers of recycling machinery to introduce innovative technologies that contribute to environmental conservation and responsible resource management.
+          </p>
+          <p>
+            Driven by integrity, quality, and long-term partnerships, CN Corporation remains committed to connecting Sri Lanka and Japan through trusted trade, innovation, and sustainable business practices.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default CompanyInfo;

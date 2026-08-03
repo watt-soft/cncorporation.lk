@@ -10,6 +10,8 @@ const Import = lazy(() => import('./pages/Import'));
 const Export = lazy(() => import('./pages/Export'));
 const VisaServices = lazy(() => import('./pages/VisaServices'));
 const Contact = lazy(() => import('./pages/Contact'));
+const CompanyInfo = lazy(() => import('./pages/CompanyInfo'));
+const Machinery = lazy(() => import('./pages/Machinery'));
 const MachineDetails = lazy(() => import('./pages/MachineDetails'));
 
 function ScrollToTop() {
@@ -53,6 +55,8 @@ function AppContent() {
                 <Route path="/export" element={<Export />} />
                 <Route path="/visa-services" element={<VisaServices />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/company-info" element={<CompanyInfo />} />
+                <Route path="/Machinery" element={<Machinery />} />
               </Routes>
             </Suspense>
           </motion.div>

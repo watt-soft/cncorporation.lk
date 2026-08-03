@@ -7,6 +7,14 @@ import { getAssetPath } from '../utils/assetPath';
 
 const slides = [
   {
+    id: 0,
+    image: getAssetPath('/export_product_hero.jpeg'),
+    title: 'Introduction of CN Corporation',
+    subtitle: 'Since 2012, we have imported premium Japanese vehicles and parts, expanded into coir exports, and introduced eco-friendly recycling solutions through trusted partnerships.',
+    cta: 'View Info',
+    link: '/company-info'
+  },
+  {
     id: 1,
     image: getAssetPath('/Industrial_recycling_machine_reveal_202606162256.jpeg'),
     title: 'Advanced Japanese Recycling Technology',
@@ -111,9 +119,9 @@ const HeroSlider = () => {
       <div className="absolute inset-0 grain-overlay pointer-events-none z-10" />
 
       {/* Content */}
-      <div className="relative z-20 h-full flex items-center">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="max-w-3xl pt-20 pb-20 md:pb-32">
+      <div className="relative z-20 h-full flex items-start justify-start">
+        <div className="container mx-auto px-4 md:px-6 pt-10">
+          <div className="max-w-3xl pt-10 pb-20 md:pb-32 text-left">
             <AnimatePresence mode="wait">
               <motion.div
                 key={current}
