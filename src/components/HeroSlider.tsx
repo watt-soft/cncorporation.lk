@@ -121,7 +121,7 @@ const HeroSlider = () => {
       {/* Content */}
       <div className="relative z-20 h-full flex items-start justify-start">
         <div className="container mx-auto px-4 md:px-6 pt-10">
-          <div className="max-w-3xl pt-10 pb-20 md:pb-32 text-left">
+          <div className="max-w-3xl pt-10 pb-14 md:pb-18 text-left">
             <AnimatePresence mode="wait">
               <motion.div
                 key={current}
@@ -195,7 +195,7 @@ const HeroSlider = () => {
       </div>
 
       {/* Controls */}
-      <div className="absolute bottom-10 md:bottom-16 right-6 md:right-10 z-30 flex gap-3">
+      <div className="absolute bottom-6 md:bottom-10 right-6 md:right-10 z-30 flex gap-3">
         <motion.button
           whileHover={{ scale: 1.15 }}
           whileTap={{ scale: 0.9 }}
@@ -215,7 +215,7 @@ const HeroSlider = () => {
       </div>
 
       {/* Progress Indicators */}
-      <div className="absolute bottom-10 md:bottom-16 left-6 md:left-10 z-30 flex gap-3 items-center">
+      <div className="absolute bottom-6 md:bottom-10 left-6 md:left-10 z-30 flex gap-3 items-center">
         {slides.map((_, index) => (
           <motion.button
             key={index}
