@@ -38,7 +38,7 @@ function AppContent() {
     <div className="flex flex-col min-h-screen">
       <ScrollToTop />
       <Navbar />
-      <main className="flex-grow">
+      <main className="flex-grow pt-[96px] md:pt-[96px]">
         <AnimatePresence mode="wait">
           <motion.div
             key={location.pathname}

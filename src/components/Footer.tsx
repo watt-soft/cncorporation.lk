@@ -78,7 +78,7 @@ const Footer = () => {
                 { to: '/import', label: 'Recycling Machinery' },
                 { to: '/export', label: 'Agricultural Exports' },
                 { to: '/visa-services', label: 'Visa & Work Permits' },
-                { to: '/import', label: 'Vehicle Imports' },
+                { to: '/machinery', label: 'Vehicle Imports' },
               ].map((link) => (
                 <li key={link.label}>
                   <Link to={link.to} className="text-textMuted hover:text-accent transition-all duration-300 text-sm inline-flex items-center gap-2 group">
@@ -97,7 +97,6 @@ const Footer = () => {
               {[
                 { to: '/company-info', label: 'About Us' },
                 { to: '/contact', label: 'Contact & Support' },
-                { to: '#', label: 'Privacy Policy' },
               ].map((link) => (
                 <li key={link.label}>
                   <Link to={link.to} className="text-textMuted hover:text-accent transition-all duration-300 text-sm inline-flex items-center gap-2 group">
