@@ -7,7 +7,7 @@ import { getAssetPath } from '../utils/assetPath';
 const Import = () => {
   const plasticRecycling = machineryData.filter(m => m.category === 'Plastic Recycling');
   const foodWaste = machineryData.filter(m => m.category === 'Food Waste Recycling');
-  const vehicles = machineryData.filter(m => m.category === 'Vehicle');
+  // const vehicles = machineryData.filter(m => m.category === 'Vehicle');
 
   return (
     <div className="bg-primary min-h-screen relative overflow-hidden">
