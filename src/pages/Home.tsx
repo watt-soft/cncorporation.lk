@@ -308,52 +308,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      {/* Brands & Partners Showcase Section */}
-      <section className="py-24 bg-secondary border-t border-white/5 overflow-hidden relative">
-        {/* Subtle center glow */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-accent/5 rounded-full blur-[120px] pointer-events-none" />
-
-        <div className="container mx-auto px-4 md:px-6 mb-12 text-center relative z-10">
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            className="text-xs uppercase tracking-[0.3em] text-accent font-bold mb-4"
-          >
-            Trusted Alliances & Brands
-          </motion.p>
-          <motion.h3
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-2xl md:text-3xl font-bold text-textLight tracking-tight"
-          >
-            Japan Quality Standards · Global Sustainable Network
-          </motion.h3>
-        </div>
-
-        {/* Infinite Marquee Track */}
-        <div className="relative w-full flex items-center justify-start overflow-hidden py-6 select-none">
-          {/* Edge fade masks */}
-          <div className="absolute left-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-r from-secondary to-transparent z-10 pointer-events-none" />
-          <div className="absolute right-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-l from-secondary to-transparent z-10 pointer-events-none" />
-
-          <div className="flex w-max animate-marquee hover:[animation-play-state:paused] gap-20 md:gap-28 px-10">
-            {[...partnerBrands, ...partnerBrands].map((brand, idx) => (
-              <div key={idx} className="flex flex-col items-center justify-center flex-shrink-0 group cursor-pointer">
-                <span className="text-xl md:text-2xl font-black text-textLight/25 group-hover:text-accent transition-all duration-300 tracking-wider">
-                  {brand.name}
-                </span>
-                <span className="text-[9px] uppercase tracking-widest text-textMuted/40 group-hover:text-textLight/60 transition-all duration-300 mt-1.5">
-                  {brand.type}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
     </div>
   );
 };

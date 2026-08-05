@@ -62,7 +62,7 @@ const Navbar = () => {
             </Link>
 
             {/* Desktop Nav */}
-            <nav className="hidden md:flex gap-8 items-center">
+            <nav className="hidden md:flex flex-wrap gap-4 items-center justify-center max-w-[calc(100%-220px)]">
               {navLinks.map((link, i) => (
                 <motion.div
                   key={link.name}
@@ -74,7 +74,7 @@ const Navbar = () => {
                     to={link.path}
                     className={({ isActive }) =>
                       clsx(
-                        'text-sm font-semibold uppercase tracking-wide transition-all duration-300 hover:text-accent relative py-1',
+                        'text-xs md:text-sm font-semibold uppercase tracking-wide transition-all duration-300 hover:text-accent relative py-1',
                         isActive ? 'text-accent' : 'text-textLight'
                       )
                     }

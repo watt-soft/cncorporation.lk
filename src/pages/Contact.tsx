@@ -128,22 +128,40 @@ const Contact = () => {
               </ul>
             </div>
 
-            {/* Map Placeholder */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.3 }}
-              className="glass-card rounded-2xl p-2 h-[300px] overflow-hidden relative"
+              className="glass-card rounded-3xl overflow-hidden border border-accent/10 shadow-[0_20px_60px_rgba(0,0,0,0.25)]"
+              whileHover={{
+                translateY: -4,
+                boxShadow: '0 28px 70px rgba(6, 124, 100, 0.18)',
+                transition: { duration: 0.3 }
+              }}
             >
-              <div className="absolute inset-0 bg-primary/80 flex items-center justify-center flex-col text-gray-500 m-2 rounded-xl border border-dashed border-gray-700/50">
-                <motion.div
-                  animate={{ y: [0, -8, 0] }}
-                  transition={{ repeat: Infinity, duration: 2 }}
-                >
-                  <MapPin size={48} className="mb-4 opacity-40" />
-                </motion.div>
-                <p className="text-textMuted/60 text-sm">Google Maps Embed Location</p>
+              <div className="bg-[#0f1720] px-6 py-5 border-b border-accent/15">
+                <div className="flex items-center justify-between gap-3">
+                  <div>
+                    <p className="text-xs uppercase tracking-[0.3em] text-accent/80 mb-1">Our Location</p>
+                    <h4 className="text-lg font-bold text-textLight">C N Corporation (PVT) LTD</h4>
+                  </div>
+                  <span className="text-xs font-semibold text-textMuted bg-white/5 px-3 py-1 rounded-full border border-white/10">
+                    Nittambuwa, Sri Lanka
+                  </span>
+                </div>
+              </div>
+              <div className="h-80 sm:h-[360px] relative">
+                <iframe
+                  src="https://maps.google.com/maps?q=C+N+CORPORATION+(PVT)+LTD,+354%2F1+Negombo+Road,+Nittambuwa+11880&z=16&output=embed"
+                  width="100%"
+                  height="100%"
+                  className="block"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  title="CN Corporation (PVT) LTD Location"
+                ></iframe>
+                <div className="absolute bottom-4 left-4 right-4 rounded-2xl bg-black/40 backdrop-blur-sm border border-white/10 p-4 text-sm text-textLight">
+                  <p className="font-semibold">354/1 Negombo Road, Nittambuwa</p>
+                  <p className="text-textMuted">Open Mon - Fri 8:30 AM - 5:30 PM</p>
+                </div>
               </div>
             </motion.div>
           </motion.div>
