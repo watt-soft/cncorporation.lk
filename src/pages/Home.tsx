@@ -23,7 +23,8 @@ const ecoStats = [
   { icon: <Leaf size={28} />, value: 95, suffix: '%', label: 'Waste Reduced', desc: 'Volume reduction per cycle' },
   { icon: <TrendingUp size={28} />, value: 30, suffix: '+', label: 'Partners', desc: 'Global eco-network connections' },
 ];
-
+ 
+/*
 const partnerBrands = [
   { name: 'SUMITOMO', type: 'Recycling Systems' },
   { name: 'KUBOTA', type: 'Agricultural Tech' },
@@ -32,7 +33,7 @@ const partnerBrands = [
   { name: 'PERKINS', type: 'Industrial Engines' },
   { name: 'CN LOGISTICS', type: 'Global Freight' },
   { name: 'JAPAN FOUNDATION', type: 'Visa & Language' },
-];
+]; */
 
 const Home = () => {
   const featuredMachines = machineryData.slice(0, 2);
