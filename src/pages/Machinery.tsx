@@ -17,11 +17,11 @@ const Machinery = () => {
           className="absolute inset-0"
         >
           <img
-            src={getAssetPath('/vehicle_import_banner.jpeg')}
+            src={getAssetPath('/import_hero.jpeg')}
             alt="Commercial Vehicle Import"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-primary/60" />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/40 to-primary/60" />
           <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-primary/30" />
         </motion.div>
 

@@ -8,11 +8,11 @@ export const machineryData: MachineItem[] = [
     category: 'Food Waste Recycling',
     image: getAssetPath('/gimiser.jpeg'),
     shortDesc: 'Environmentally friendly and hygienic food waste processor operating under the theme "Kind to the Earth, Beneficial to People".',
-    features: ['99.9% Volume Reduction', 'Odor-Free Operation', 'Fully Automatic', 'Recyclable as Liquid Fertilizer'],
+    features: ['99.9% Volume Reduction', 'Odor-Free Operation', 'Fully Automatic', 'Recyclable as Eco-Friendly Water'],
     details: {
       heroImage: getAssetPath('/Industrial_recycling_machine_reveal_202606162257.jpeg'),
       diagramImage: getAssetPath('/gomiser _diagram.jpeg'),
-      overview: 'The Gomiser (GH Series) represents the pinnacle of compact, on-site food waste recycling. Engineered in Japan, this revolutionary system completely eliminates food waste at the source using the natural power of advanced microorganisms. By turning food waste into water and carbon dioxide, the Gomiser ensures a zero-residue, highly hygienic environment for your facility.\n\nDesigned with strict adherence to sanitation and environmental standards, the Gomiser effectively stops odors, prevents pests, and drastically reduces the labor and costs associated with traditional waste storage and transport. It is the perfect ecosystem for daycare centers, hospitals, restaurants, and catering facilities looking to eliminate food waste effortlessly while protecting the environment.',
+      overview: 'The GH Series represents the pinnacle of compact, on-site food waste recycling. Engineered in Japan, this revolutionary system completely eliminates food waste at the source using the natural power of advanced microorganisms. By turning food waste into water and carbon dioxide, the GH Series ensures a zero-residue, highly hygienic environment for your facility.\n\nDesigned with strict adherence to sanitation and environmental standards, the GH Series effectively stops odors, prevents pests, and drastically reduces the labor and costs associated with traditional waste storage and transport. It is the perfect ecosystem for daycare centers, hospitals, restaurants, and catering facilities looking to eliminate food waste effortlessly while protecting the environment.',
       keyBenefits: [
         { title: 'Superior Hygiene', desc: 'Dispose of food waste at any time without storing it. Maintains a hygienic environment with no odors or pests.' },
         { title: '99.9% Volume Reduction', desc: 'Completely decomposes food waste into water. No residue to remove or handle afterward.' },
@@ -21,7 +21,7 @@ export const machineryData: MachineItem[] = [
         { title: 'Odor-Free', desc: 'Prevents the buildup of odor-causing substances by breaking down waste into water.' },
         { title: 'Exceptional Durability', desc: 'Made of stainless steel, resistant to rust and corrosion. Features leak protection and automatic agitation stop.' },
         { title: 'Low Operating Costs', desc: 'No regular media core replacement needed; occasional refills a few times a year are sufficient. Lower labor and disposal costs.' },
-        { title: 'Recyclable as Liquid Fertilizer', desc: 'The processed water can be used as a liquid fertilizer. Extract exactly what you need.' }
+        { title: 'Recyclable as Eco-Friendly Water', desc: 'The processed water can be safely exposed to the environment.' }
       ],
       processingSteps: [
         { step: 1, title: 'Food Waste Input', desc: 'Food waste is added directly into the machine without draining moisture. Non-processable items must be removed.' },
@@ -45,7 +45,7 @@ export const machineryData: MachineItem[] = [
         'Food Factories: GH250 (250kg/day) or GSP-1000 (1t/day)'
       ],
       systemOptions: [
-        'Liquid Fertilizer Extraction Valve',
+        'Water Extraction Valve',
         'Indoor Ventilation Fan',
         'Automatic Input Lift',
         'Sink with Grinder',

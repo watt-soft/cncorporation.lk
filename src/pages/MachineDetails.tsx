@@ -89,7 +89,7 @@ const MachineDetails = () => {
             className="glass-card p-8 md:p-12 rounded-2xl -mt-16 relative mb-16 shadow-[0_30px_60px_rgba(0,0,0,0.5)] border-accent/20"
           >
             <h2 className="text-2xl font-bold text-textLight mb-4">Overview</h2>
-            <p className="text-textMuted text-lg leading-relaxed">{details.overview}</p>
+            <p className="text-textMuted text-justify text-lg leading-relaxed">{details.overview}</p>
           </motion.div>
         ) : (
           <div className="pt-16" />
