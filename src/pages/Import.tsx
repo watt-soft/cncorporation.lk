@@ -21,11 +21,11 @@ const Import = () => {
           className="absolute inset-0"
         >
           <img
-            src={getAssetPath('/export_hero.jpeg')}
+            src={getAssetPath('/import_hero.jpeg')}
             alt="Recycling machinery"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/85 to-primary/50" />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/100 to-primary/50" />
           <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-primary/30" />
         </motion.div>
 
@@ -46,7 +46,7 @@ const Import = () => {
             >
               <span className="text-accent">Home</span>
               <span>/</span>
-              <span>Import Machinery</span>
+              <span>Sustainability & Eco-Friendly</span>
             </motion.div>
 
             <motion.div
@@ -56,7 +56,7 @@ const Import = () => {
               className="h-1 bg-accent mb-6 rounded-full shadow-[0_0_10px_rgba(244,197,27,0.3)]"
             />
             <h1 className="text-4xl md:text-6xl font-bold text-textLight mb-6">
-              Advanced Japanese <br/>
+              Advanced Japanese <br />
               <span className="text-accent">Waste Disposal System</span>
             </h1>
             <motion.p
@@ -108,7 +108,7 @@ const Import = () => {
         </div>
 
         {/* Plastic Waste Solutions */}
-        <div className="mb-24">
+        {/* <div className="mb-24">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -139,9 +139,9 @@ const Import = () => {
               />
             ))}
           </div>
-        </div>
+        </div> */}
 
-  
+
 
       </div>
     </div>
